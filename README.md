@@ -18,5 +18,12 @@
 
     - https://docs.djangoproject.com/en/5.1/topics/auth/customizing/#writing-a-manager-for-a-custom-user-model
 
-- User Forms
+- User Creation & Changing Forms
     - https://docs.djangoproject.com/en/5.1/topics/auth/customizing/#a-full-example
+
+
+- User Register
+    - UserRegistrationForm
+    - UserRegisterView
+    - urlpatterns
+    - accounts/templates/register.html
