@@ -12,14 +12,14 @@ class UserManager(BaseUserManager):
             raise ValueError('user muset have full_name')
 
         user = self.model(phone_number=phone_number, email=self.normalize_email(email),
-                          full_name=full_name, password=password)
+                          full_name=full_name)
         user.set_password(password)
-        user.save(using = self._db)
-        # user.save()
+        # user.save(using = self._db)
+        user.save()
         return user
 
     def create_superuser(self, phone_number, email, full_name, password):
         user = self.create_user(phone_number, email, full_name, password)
-        user.admin = True
+        user.is_admin = True
         user.save()
         return user
