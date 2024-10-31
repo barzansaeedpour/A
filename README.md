@@ -27,3 +27,13 @@
     - UserRegisterView
     - urlpatterns
     - accounts/templates/register.html
+
+## session 3:
+
+    - Generate and send random code to user for registration
+      - Otp Model
+      - OtpCodeAdmin
+    - Sessions
+      - https://docs.djangoproject.com/en/5.1/topics/http/sessions/
+      - When the sessions are saved?
+      - utils (send otp code by sms)
