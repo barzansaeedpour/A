@@ -40,4 +40,5 @@
       - accounts.views (UserRegisterView.post)
       - accounts.forms (VerifyCodeForm)
       - accounts.views (UserRegisterVerifyCodeView)
-      - accounts.templates (verify.html
+      - accounts.templates (verify.html)
+      - utils (kavenegar) 
