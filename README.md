@@ -37,3 +37,7 @@
       - https://docs.djangoproject.com/en/5.1/topics/http/sessions/
       - When the sessions are saved?
       - utils (send otp code by sms)
+      - accounts.views (UserRegisterView.post)
+      - accounts.forms (VerifyCodeForm)
+      - accounts.views (UserRegisterVerifyCodeView)
+      - accounts.templates (verify.html
