@@ -33,7 +33,7 @@
     - Generate and send random code to user for registration
       - Otp Model
       - OtpCodeAdmin
-    - Sessions
+    - Register & Sessions
       - https://docs.djangoproject.com/en/5.1/topics/http/sessions/
       - When the sessions are saved?
       - utils (send otp code by sms)
@@ -41,4 +41,7 @@
       - accounts.forms (VerifyCodeForm)
       - accounts.views (UserRegisterVerifyCodeView)
       - accounts.templates (verify.html)
-      - utils (kavenegar) 
+      - utils (kavenegar)
+    - Static & Media files
+      - What is the difference?
+      - home/static/home/css -> base.html, home.html
