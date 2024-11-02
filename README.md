@@ -45,3 +45,4 @@
     - Static & Media files
       - What is the difference?
       - home/static/home/css -> base.html, home.html
+      - Static files directory -> for all of the apps -> base.html
