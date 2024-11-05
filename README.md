@@ -61,3 +61,11 @@
         - MEDIA_ROOT -> Absolute filesystem path to the directory that will hold user-uploaded fiels
         - MEDIA_URL -> Url that handles the media served from MEDIA_ROOT
 
+    - Product Detail
+        - home/HomeView
+        - home/templates/home/home.html
+        - Bootstrap Card (https://getbootstrap.com/docs/4.0/components/card/)
+        - Image is not showing -> serving files uploaded by a user during development (https://docs.djangoproject.com/en/5.1/howto/static-files/#serving-files-uploaded-by-a-user-during-development)
+        - add static to urlpattern (A/urls.py) 
+        - add a tag to redirect the user to detail page
+        - home/views (ProductDetailView)
