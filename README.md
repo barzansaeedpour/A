@@ -69,3 +69,12 @@
         - add static to urlpattern (A/urls.py) 
         - add a tag to redirect the user to detail page
         - home/views (ProductDetailView)
+
+## Session 5:
+    - Django-storages (Bucket)
+        - pip install django-storages
+    - settings
+        - add 'storages' to installed apps
+        - docs: https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html
+    - Add Variables to the settings
+    - pip install boto3
