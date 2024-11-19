@@ -135,11 +135,26 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.User'
 
 # Arvan Cloud Storage
+# DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+# AWS_ACCESS_KEY_ID = "3ecd156a-6d20-441d-99d8-bfb04acde3c9"
+# AWS_SECRET_ACCESS_KEY = "643f99af8aac3b0665bed62a0e4527feb7606cf71152ccb45da700d0607be487"
+# AWS_S3_ENDPOINT_URL = "https://s3.ir-thr-at1.arvanstorage.ir"
+# AWS_STORAGE_BUCKET_NAME = "barzan-django"
+# AWS_SERVICE_NAME = "s3"
+# AWS_S3_FILE_OVERWRITE = False # do not replace files with the same name! change the name
 
-DEFAULT_FILE_STORAGE = "storages.backends.s3.S3Storage"
+############################## New
+
+# تنظیمات آروان کلاد
+DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 AWS_ACCESS_KEY_ID = "3ecd156a-6d20-441d-99d8-bfb04acde3c9"
 AWS_SECRET_ACCESS_KEY = "643f99af8aac3b0665bed62a0e4527feb7606cf71152ccb45da700d0607be487"
-AWS_S3_ENDPOINT_URL = "https://s3.ir-thr-at1.arvanstorage.ir"
 AWS_STORAGE_BUCKET_NAME = "barzan-django"
-AWS_SERVICE_NAME = "s3"
-AWS_S3_FILE_OVERWRITE = False # do not replace files with the same name! change the name
+AWS_S3_ENDPOINT_URL = "https://s3.ir-thr-at1.arvanstorage.ir"
+AWS_S3_REGION_NAME = "ir-thr-at1"
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.ir-thr-at1.arvanstorage.ir'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+# تنظیمات آدرس‌های فایل‌های رسانه‌ای
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
