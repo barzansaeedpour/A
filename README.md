@@ -78,3 +78,8 @@
         - docs: https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html
     - Add Variables to the settings
     - pip install boto3
+
+## Session 6:
+    - user passes test
+        - https://docs.djangoproject.com/en/5.1/topics/auth/default/#limiting-access-to-logged-in-users
+        
