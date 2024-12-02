@@ -82,4 +82,7 @@
 ## Session 6:
     - user passes test
         - https://docs.djangoproject.com/en/5.1/topics/auth/default/#limiting-access-to-logged-in-users
-        
+    - Login, Logout
+        - forms -> UserLoginForm
+        - view -> UserLogoutView, UserLoginView
+        - urls -> login, logout
