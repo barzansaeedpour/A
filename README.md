@@ -83,6 +83,9 @@
     - user passes test
         - https://docs.djangoproject.com/en/5.1/topics/auth/default/#limiting-access-to-logged-in-users
     - Login, Logout
-        - forms -> UserLoginForm
-        - view -> UserLogoutView, UserLoginView
-        - urls -> login, logout
+        - accounts/forms -> UserLoginForm
+        - accounts/view -> UserLogoutView, UserLoginView
+        - accounts/urls -> login, logout
+        - templates/navbar -> login, logout
+        - templates/accounts -> login
+    -
